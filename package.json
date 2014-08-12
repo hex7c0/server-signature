@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "1.0.0",
   "name": "server-signature",
   "description": "server response header field",
   "keywords": [
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "express": "~4.8.3",
-    "mocha": "~1.21.3",
+    "mocha": "~1.21.4",
     "grunt-contrib-clean": "0.5.0",
     "grunt-contrib-uglify": "0.5.0",
     "grunt-shell": "~0.7.0",
