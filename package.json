@@ -1,0 +1,47 @@
+{
+  "version": "0.0.1",
+  "name": "server-signature",
+  "description": "server response header field",
+  "keywords": [
+    "server",
+    "signature",
+    "header"
+  ],
+  "preferGlobal": false,
+  "homepage": "http://supergiovane.tk/#/server-signature",
+  "author": {
+    "name": "hex7c0",
+    "email": "hex7c0@gmail.com",
+    "url": "http://hex7c0.tk/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hex7c0/server-signature.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hex7c0/server-signature/issues",
+    "email": "hex7c0@gmail.com"
+  },
+  "directories":{
+    "doc":"./doc"
+  },
+  "main": "index.min.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "express": "~4.8.3",
+    "mocha": "~1.21.3",
+    "grunt-contrib-clean": "0.5.0",
+    "grunt-contrib-uglify": "0.5.0",
+    "grunt-shell": "~0.7.0",
+    "supertest": "~0.13.0"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "prepublish": "npm prune",
+    "test": "mocha --bail --check-leaks test/"
+  },
+  "license": "GPLv3"
+}
