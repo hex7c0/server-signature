@@ -21,7 +21,9 @@ try {
     process.exit(1);
 }
 
-app.use(signature());
+app.use(signature({
+    token: 'Minor'
+}));
 app.get('/', function(req, res) {
 
     res.send('ok');

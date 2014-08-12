@@ -5,6 +5,7 @@
 [![devDependency Status](https://david-dm.org/hex7c0/server-signature/dev-status.svg)](https://david-dm.org/hex7c0/server-signature#info=devDependencies)
 
 Controls whether Server response header field which is sent back to clients includes a description of the generic OS-type of the server.
+Similar to Apache2.
 
 ## Installation
 
@@ -33,7 +34,7 @@ app.use(signature());
 #### options
 
  - `header`- **String** Header filed *(default "Server")*
- - `signature`- **String** Name of ProductOnly of standard string *(default "Nodejs")*
+ - `signature`- **String** ProductOnly of standard string *(default "Nodejs")*
  - `token`- **String** Type of directive, related to http://httpd.apache.org/docs/2.2/mod/core.html#servertokens *(default "Full")*
  - `custom`- **String** Rewrite standard string with this *(default "disabled")*
  - `extra` - **String** Write Extra information after standard or custom string *(default "disabled")*

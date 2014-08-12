@@ -4,14 +4,10 @@
  * @module server-signature
  * @package server-signature
  * @subpackage main
- * @version 0.0.1
+ * @version 1.0.0
  * @author hex7c0 <hex7c0@gmail.com>
  * @copyright hex7c0 2014
  * @license GPLv3
- */
-
-/*
- * initialize module
  */
 
 /*
@@ -22,7 +18,7 @@
  * 
  * @function wrapper
  * @param {Object} my - user cfg
- * @return {Object}
+ * @return {Function}
  */
 function wrapper(my) {
 
@@ -52,7 +48,8 @@ function wrapper(my) {
 
     return function header(req, res, next) {
 
-        res.header(my.header, output);
+        var r = req.res || res;
+        r.setHeader(my.header, output);
         try {
             return next();
         } catch (TypeError) {
