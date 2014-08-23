@@ -4,7 +4,7 @@
  * @module server-signature
  * @package server-signature
  * @subpackage main
- * @version 1.0.0
+ * @version 1.0.1
  * @author hex7c0 <hex7c0@gmail.com>
  * @copyright hex7c0 2014
  * @license GPLv3
@@ -50,11 +50,10 @@ function wrapper(my) {
 
         var r = req.res || res;
         r.setHeader(my.header, output);
-        try {
+        if (next) {
             return next();
-        } catch (TypeError) {
-            return;
         }
+        return;
     };
 }
 
