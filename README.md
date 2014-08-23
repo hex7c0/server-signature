@@ -2,7 +2,7 @@
 
 [![NPM version](https://badge.fury.io/js/server-signature.svg)](http://badge.fury.io/js/server-signature)
 [![Build Status](https://travis-ci.org/hex7c0/server-signature.svg?branch=master)](https://travis-ci.org/hex7c0/server-signature)
-[![devDependency Status](https://david-dm.org/hex7c0/server-signature/dev-status.svg)](https://david-dm.org/hex7c0/server-signature#info=devDependencies)
+[![Dependency Status](https://david-dm.org/hex7c0/server-signature/status.svg)](https://david-dm.org/hex7c0/server-signature)
 
 Controls whether Server response header field which is sent back to clients includes a description of the generic OS-type of the server.
 Similar to Apache2.
