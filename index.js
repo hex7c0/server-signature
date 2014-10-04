@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /**
  * @file server-signature main
  * @module server-signature
