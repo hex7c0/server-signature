@@ -4,7 +4,7 @@
  * @module server-signature
  * @package server-signature
  * @subpackage main
- * @version 1.0.1
+ * @version 1.0.0
  * @author hex7c0 <hex7c0@gmail.com>
  * @copyright hex7c0 2014
  * @license GPLv3
@@ -62,12 +62,12 @@ function wrapper(my) {
  * 
  * @exports signature
  * @function signature
- * @param {Object} options - various options. Check README.md
+ * @param {Object} opt - various options. Check README.md
  * @return {Object}
  */
-module.exports = function signature(options) {
+function signature(opt) {
 
-    var options = options || Object.create(null);
+    var options = opt || Object.create(null);
     var my = {
         header: String(options.header || 'Server'),
         signature: String(options.signature || 'Nodejs'),
@@ -89,4 +89,5 @@ module.exports = function signature(options) {
         my.Prod = true;
     }
     return wrapper(my);
-};
+}
+module.exports = signature;
