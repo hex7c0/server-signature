@@ -38,6 +38,7 @@ app.use(signature());
  - `token`- **String** Type of directive, related to http://httpd.apache.org/docs/2.2/mod/core.html#servertokens *(default "Full")*
  - `custom`- **String** Rewrite standard string with this *(default "disabled")*
  - `extra` - **String** Write Extra information after standard or custom string *(default "disabled")*
+ - `standalone` - **Boolean** Return function that returns server-signature *(default "false")*
 
 ## Examples
 
