@@ -23,6 +23,7 @@
 function wrapper(my) {
 
     var output;
+    var header = my.header;
     if (my.custom) {
         output = String(my.custom);
     } else { // don't check Prod
@@ -46,14 +47,17 @@ function wrapper(my) {
         output += ' ' + String(my.extra);
     }
 
-    return function header(req, res, next) {
+    if (my.standalone) {
+        return function headers() {
+
+            return output;
+        };
+    }
+    return function headers(req, res, next) {
 
         var r = req.res || res;
-        r.setHeader(my.header, output);
-        if (next) {
-            return next();
-        }
-        return;
+        r.setHeader(header, output);
+        return next();
     };
 }
 
@@ -73,7 +77,8 @@ function signature(opt) {
         signature: String(options.signature || 'Nodejs'),
         token: String(options.token || 'Full'),
         custom: options.custom,
-        extra: options.extra
+        extra: options.extra,
+        standalone: Boolean(options.standalone)
     };
     if (my.token == 'Full') {
         my.Prod = my.Major = my.Minor = my.Min = my.OS = true;
