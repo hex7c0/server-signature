@@ -1,5 +1,5 @@
 {
-  "version": "1.0.6",
+  "version": "1.0.7",
   "name": "server-signature",
   "description": "server response header field",
   "keywords": [
@@ -24,7 +24,7 @@
   },
   "main": "index.min.js",
   "dependencies": {
-    "setheaders": "0.0.1"
+    "setheaders": "0.0.2"
   },
   "devDependencies": {
     "express": "~4.10",
