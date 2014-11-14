@@ -11,6 +11,18 @@
  */
 
 /*
+ * initialize module
+ */
+// import
+try {
+    // module
+    var setHeader = require('setheaders');
+} catch (MODULE_NOT_FOUND) {
+    console.error(__filename + ' ' + MODULE_NOT_FOUND);
+    process.exit(1);
+}
+
+/*
  * functions
  */
 /**
@@ -55,8 +67,7 @@ function wrapper(my) {
     }
     return function headers(req, res, next) {
 
-        var r = req.res || res;
-        r.setHeader(header, output);
+        setHeader(res, header, output);
         return next();
     };
 }
