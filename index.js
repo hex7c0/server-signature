@@ -67,7 +67,7 @@ function wrapper(my) {
   }
   return function headers(req, res, next) {
 
-    setHeader(res, header, output, true);
+    setHeader(res, header, output);
     return next();
   };
 }
