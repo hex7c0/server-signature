@@ -60,16 +60,17 @@ function wrapper(my) {
   }
 
   if (my.standalone) {
-    return function headers() {
+    return function() {
 
       return output;
     };
   }
-  return function headers(req, res, next) {
+  function headers(req, res, next) {
 
     setHeader(res, header, output);
     return next();
-  };
+  }
+  return headers;
 }
 
 /**
