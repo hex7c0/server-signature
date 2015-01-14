@@ -27,7 +27,7 @@
     "setheaders": "0.0.3"
   },
   "devDependencies": {
-    "express": "~4.10",
+    "express": "~4.11",
     "mocha": "~2.1",
     "grunt-contrib-clean": "~0.6",
     "grunt-contrib-uglify": "~0.7",
