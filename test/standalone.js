@@ -14,12 +14,12 @@
  */
 // import
 try {
-    var signature = require('../index.min.js')({
-        standalone: true
-    });
+  var signature = require('..')({
+    standalone: true
+  });
 } catch (MODULE_NOT_FOUND) {
-    console.error(MODULE_NOT_FOUND);
-    process.exit(1);
+  console.error(MODULE_NOT_FOUND);
+  process.exit(1);
 }
 
 /*
@@ -27,11 +27,11 @@ try {
  */
 describe('standalone', function() {
 
-    it('should return standard signature', function(done) {
+  it('should return standard signature', function(done) {
 
-        var t = signature();
-        if (/^Nodejs\/0.1[0-1]{1,1}.[0-9]{1,2} \(/.test(t)) {
-            done();
-        }
-    });
+    var t = signature();
+    if (/^Nodejs\/[0-9]{1,2}.[0-9]{1,2}.[0-9]{1,2} \(/.test(t)) {
+      done();
+    }
+  });
 });
