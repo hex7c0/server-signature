@@ -2,25 +2,12 @@
 /**
  * @file server-signature main
  * @module server-signature
- * @package server-signature
  * @subpackage main
  * @version 1.0.0
  * @author hex7c0 <hex7c0@gmail.com>
  * @copyright hex7c0 2014
  * @license GPLv3
  */
-
-/*
- * initialize module
- */
-// import
-try {
-  // module
-  var setHeader = require('setheaders');
-} catch (MODULE_NOT_FOUND) {
-  console.error(__filename + ' ' + MODULE_NOT_FOUND);
-  process.exit(1);
-}
 
 /*
  * functions
@@ -65,6 +52,8 @@ function wrapper(my) {
       return output;
     };
   }
+
+  var setHeader = require('setheaders');
   function headers(req, res, next) {
 
     setHeader(res, header, output);
