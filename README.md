@@ -1,8 +1,9 @@
 # [server-signature](http://supergiovane.tk/#/server-signature)
 
-[![NPM version](https://badge.fury.io/js/server-signature.svg)](http://badge.fury.io/js/server-signature)
-[![Build Status](https://travis-ci.org/hex7c0/server-signature.svg?branch=master)](https://travis-ci.org/hex7c0/server-signature)
-[![Dependency Status](https://david-dm.org/hex7c0/server-signature/status.svg)](https://david-dm.org/hex7c0/server-signature)
+[![NPM version](https://img.shields.io/npm/v/server-signature.svg)](https://www.npmjs.com/package/server-signature)
+[![Linux Status](https://img.shields.io/travis/hex7c0/server-signature.svg?label=linux)](https://travis-ci.org/hex7c0/server-signature)
+[![Windows Status](https://img.shields.io/appveyor/ci/hex7c0/server-signature.svg?label=windows)](https://ci.appveyor.com/project/hex7c0/server-signature)
+[![Dependency Status](https://img.shields.io/david/hex7c0/server-signature.svg)](https://david-dm.org/hex7c0/server-signature)
 
 Controls whether Server response header field which is sent back to clients includes a description of the generic OS-type of the server.
 Similar to Apache2.
@@ -42,11 +43,11 @@ app.use(signature());
 
 ## Examples
 
-Take a look at my [examples](https://github.com/hex7c0/server-signature/tree/master/examples)
+Take a look at my [examples](examples)
 
 Full string
 ```bash
 Server: Nodejs/0.10.30 (Darwin)
 ```
 
-### [License GPLv3](http://opensource.org/licenses/GPL-3.0)
+### [License GPLv3](LICENSE)
