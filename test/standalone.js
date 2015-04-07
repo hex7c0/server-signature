@@ -12,20 +12,16 @@
 /*
  * initialize module
  */
-// import
-try {
-  var signature = require('..')({
-    standalone: true
-  });
-} catch (MODULE_NOT_FOUND) {
-  console.error(MODULE_NOT_FOUND);
-  process.exit(1);
-}
+var signature = require('..');
 
 /*
  * test module
  */
 describe('standalone', function() {
+
+  signature = signature({
+    standalone: true
+  });
 
   it('should return standard signature', function(done) {
 
