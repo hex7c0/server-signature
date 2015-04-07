@@ -4,6 +4,7 @@
 [![Linux Status](https://img.shields.io/travis/hex7c0/server-signature.svg?label=linux)](https://travis-ci.org/hex7c0/server-signature)
 [![Windows Status](https://img.shields.io/appveyor/ci/hex7c0/server-signature.svg?label=windows)](https://ci.appveyor.com/project/hex7c0/server-signature)
 [![Dependency Status](https://img.shields.io/david/hex7c0/server-signature.svg)](https://david-dm.org/hex7c0/server-signature)
+[![Coveralls](https://img.shields.io/coveralls/hex7c0/server-signature.svg)](https://coveralls.io/r/hex7c0/server-signature)
 
 Controls whether Server response header field which is sent back to clients includes a description of the generic OS-type of the server.
 Similar to Apache2.
