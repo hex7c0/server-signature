@@ -12,23 +12,15 @@
 /*
  * initialize module
  */
-// import
-try {
-    var signature = require('../index.min.js'); // require('server-signature')
-    var app = require('express')();
-} catch (MODULE_NOT_FOUND) {
-    console.error(MODULE_NOT_FOUND);
-    process.exit(1);
-}
+var signature = require('..'); // require('server-signature') instead
+var app = require('express')();
 
 app.use(signature({
-    token: 'Minor'
+  token: 'Minor' // Server:Nodejs/1.6
 }));
+
 app.get('/', function(req, res) {
 
-    res.send('ok');
-    return;
-});
-// server-signature starting
-app.listen(3000);
+  res.send('ok');
+}).listen(3000);
 console.log('starting "hello world" on port 3000');
