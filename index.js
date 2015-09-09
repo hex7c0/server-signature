@@ -55,12 +55,11 @@ function wrapper(my) {
 
   var setHeader = require('setheaders').setWritableHeader;
 
-  function headers(req, res, next) {
+  return function headers(req, res, next) {
 
-    setHeader(res, header, output);
+    setHeader(res, header, output); // writable header, check if empty
     return next();
-  }
-  return headers;
+  };
 }
 
 /**
