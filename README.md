@@ -1,4 +1,4 @@
-# [server-signature](http://supergiovane.tk/#/server-signature)
+# [server-signature](https://github.com/hex7c0/server-signature)
 
 [![NPM version](https://img.shields.io/npm/v/server-signature.svg)](https://www.npmjs.com/package/server-signature)
 [![Linux Status](https://img.shields.io/travis/hex7c0/server-signature.svg?label=linux)](https://travis-ci.org/hex7c0/server-signature)
