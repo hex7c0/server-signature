@@ -24,7 +24,7 @@
   },
   "main": "index.min.js",
   "dependencies": {
-    "setheaders": "0.1.6"
+    "setheaders": "0.1.7"
   },
   "devDependencies": {
     "express": "~4.14",
