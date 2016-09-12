@@ -1,14 +1,20 @@
+v1.4.0 / 2016-09-12
+==================
+
+  * Tested against `node`@6
+  * Update `setheaders`@0.1.7
+
 v1.3.1 / 2015-11-06
 ==================
 
-  * Test `node`@5
+  * Tested against `node`@5
   * Update `setheaders`@0.1.5
 
 v1.3.0 / 2015-09-09
 ==================
 
-  * Test `iojs`@3
-  * Test `node`@4
+  * Tested against `iojs`@3
+  * Tested against `node`@4
   * Update `setheaders`@0.1.4
 
 v1.2.1 / 2015-08-04
