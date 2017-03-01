@@ -1,3 +1,10 @@
+v1.5.0 / 2017-03-01
+==================
+
+  * Tested against `node`@7
+  * Remove support for `node`@0
+  * Update `setheaders`@0.2.0
+
 v1.4.0 / 2016-09-12
 ==================
 
