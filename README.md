@@ -1,7 +1,7 @@
 # [server-signature](https://github.com/hex7c0/server-signature)
 
 [![NPM version](https://img.shields.io/npm/v/server-signature.svg)](https://www.npmjs.com/package/server-signature)
-[![Linux Status](https://img.shields.io/travis/hex7c0/server-signature.svg?label=linux)](https://travis-ci.org/hex7c0/server-signature)
+[![Linux Status](https://img.shields.io/travis/hex7c0/server-signature.svg?label=linux-osx)](https://travis-ci.org/hex7c0/server-signature)
 [![Windows Status](https://img.shields.io/appveyor/ci/hex7c0/server-signature.svg?label=windows)](https://ci.appveyor.com/project/hex7c0/server-signature)
 [![Dependency Status](https://img.shields.io/david/hex7c0/server-signature.svg)](https://david-dm.org/hex7c0/server-signature)
 [![Coveralls](https://img.shields.io/coveralls/hex7c0/server-signature.svg)](https://coveralls.io/r/hex7c0/server-signature)
